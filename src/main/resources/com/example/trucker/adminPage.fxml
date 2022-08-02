@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="714.0" prefWidth="1339.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.trucker.AdminPage">
+   <bottom>
+      <AnchorPane prefHeight="85.0" prefWidth="694.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="btnDelete" layoutX="643.0" layoutY="23.0" mnemonicParsing="false" onAction="#deleteOrder" prefHeight="38.0" prefWidth="100.0" style="-fx-background-color: red;" text="DELETE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="adminlogout" layoutX="27.0" layoutY="20.0" mnemonicParsing="false" onAction="#adminLogOut" text="Log Out">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnUpdate" layoutX="518.0" layoutY="23.0" mnemonicParsing="false" onAction="#updateOrder" prefHeight="38.0" prefWidth="100.0" style="-fx-background-color: yellow;" text="UPDATE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnInsert" layoutX="389.0" layoutY="23.0" mnemonicParsing="false" onAction="#insertOrder" prefHeight="38.0" prefWidth="100.0" style="-fx-background-color: green;" text="INSERT" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+         </children></AnchorPane>
+   </bottom>
+   <center>
+      <AnchorPane prefHeight="629.0" prefWidth="412.0" BorderPane.alignment="CENTER">
+         <children>
+            <GridPane layoutX="2.0" prefHeight="626.0" prefWidth="447.0">
+              <columnConstraints>
+                <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="219.0" minWidth="10.0" prefWidth="120.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="327.0" minWidth="10.0" prefWidth="327.0" />
+              </columnConstraints>
+              <rowConstraints>
+                  <RowConstraints maxHeight="65.0" minHeight="10.0" prefHeight="44.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="65.0" minHeight="10.0" prefHeight="44.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="65.0" minHeight="10.0" prefHeight="44.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="65.0" minHeight="10.0" prefHeight="44.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="65.0" minHeight="10.0" prefHeight="44.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="65.0" minHeight="10.0" prefHeight="44.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="65.0" minHeight="10.0" prefHeight="44.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="65.0" minHeight="10.0" prefHeight="44.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="65.0" minHeight="10.0" prefHeight="44.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="65.0" minHeight="10.0" prefHeight="44.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="207.0" minHeight="10.0" prefHeight="49.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="289.0" minHeight="10.0" prefHeight="39.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="320.0" minHeight="10.0" prefHeight="36.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="382.0" minHeight="10.0" prefHeight="36.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="455.0" minHeight="10.0" prefHeight="29.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="203.0" minHeight="0.0" prefHeight="51.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label fx:id="lbError" alignment="CENTER" prefHeight="55.0" prefWidth="327.0" textAlignment="CENTER" textFill="RED" GridPane.columnIndex="1" GridPane.rowIndex="15" />
+                  <Label alignment="CENTER" prefHeight="42.0" prefWidth="327.0" text="ORDERS" textAlignment="CENTER" GridPane.columnIndex="1">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="tfProduct" prefHeight="26.0" prefWidth="327.0" promptText="Product" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <TextField fx:id="tfUnits" prefHeight="26.0" prefWidth="327.0" promptText="Units" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                     <children>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <Label layoutX="86.0" layoutY="11.0" text="Quantity" />
+                              <TextField fx:id="tfId" layoutY="7.0" prefHeight="25.0" prefWidth="68.0" promptText="ID" />
+                              <TextField fx:id="tfQuantity" layoutX="143.0" layoutY="7.0" prefHeight="25.0" prefWidth="182.0" promptText="Quantity" />
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </HBox>
+                  <TextField fx:id="tfCompany" promptText="Company" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <TextField fx:id="tfCompanyID" promptText="Company ID" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                  <TextField fx:id="tfEmail" promptText="Email" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                  <Label alignment="CENTER_RIGHT" text="Product" textAlignment="RIGHT" GridPane.rowIndex="1" />
+                  <Label text="Units" GridPane.rowIndex="2" />
+                  <Label text="ID" GridPane.rowIndex="3" />
+                  <Label text="Company" GridPane.rowIndex="4" />
+                  <Label text="Company ID" GridPane.rowIndex="5" />
+                  <Label text="Email" GridPane.rowIndex="6" />
+                  <Label text="Delivery Address" GridPane.rowIndex="7" />
+                  <Label text="City" GridPane.rowIndex="8" />
+                  <Label text="State" GridPane.rowIndex="9" />
+                  <Label text="Country" GridPane.rowIndex="10" />
+                  <Label text="Google N" GridPane.rowIndex="11" />
+                  <Label text="Contact" GridPane.rowIndex="12" />
+                  <Label text="Phone" GridPane.rowIndex="13" />
+                  <Label text="Other" GridPane.rowIndex="14" />
+                  <TextField fx:id="tfDeliveryAddress" promptText="Delivery Address" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                  <TextField fx:id="tfCity" promptText="City to Deliver" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="9">
+                     <children>
+                        <TextField fx:id="tfState" layoutY="7.0" prefHeight="25.0" prefWidth="138.0" promptText="State" />
+                        <Label layoutX="150.0" layoutY="11.0" text="ZIP" />
+                        <TextField fx:id="tfZip" layoutX="178.0" layoutY="7.0" promptText="ZIP Code" />
+                     </children>
+                  </AnchorPane>
+                  <TextField fx:id="tfCountry" promptText="Country" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="11">
+                     <children>
+                        <TextField fx:id="tfGooglN" layoutY="6.0" prefHeight="25.0" prefWidth="124.0" promptText="N" />
+                        <Label layoutX="130.0" layoutY="10.0" text="Google E" />
+                        <TextField fx:id="tfGooglE" layoutX="184.0" layoutY="6.0" prefHeight="25.0" prefWidth="144.0" promptText="E" />
+                     </children>
+                  </AnchorPane>
+                  <TextField fx:id="tfContact" promptText="Contact" GridPane.columnIndex="1" GridPane.rowIndex="12" />
+                  <TextField fx:id="tfPhone" promptText="Phone" GridPane.columnIndex="1" GridPane.rowIndex="13" />
+                  <TextArea fx:id="taOther" prefHeight="200.0" prefWidth="200.0" promptText="Other" GridPane.columnIndex="1" GridPane.rowIndex="14" />
+               </children>
+            </GridPane>
+         </children>
+      </AnchorPane>
+   </center>
+   <left>
+      <AnchorPane prefHeight="629.0" prefWidth="116.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="btnDrivers" layoutX="2.0" layoutY="202.0" mnemonicParsing="false" onAction="#adminDrivers" prefHeight="37.0" prefWidth="113.0" text="DRIVERS" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnTrucks" layoutX="2.0" layoutY="258.0" mnemonicParsing="false" onAction="#adminTrucks" prefHeight="37.0" prefWidth="113.0" text="TRUCKS" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnTrailers" layoutX="2.0" layoutY="311.0" mnemonicParsing="false" onAction="#adminTrailers" prefHeight="37.0" prefWidth="113.0" text="TRAILERS" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnUsers" layoutX="2.0" layoutY="155.0" mnemonicParsing="false" onAction="#adminUsers" prefHeight="37.0" prefWidth="113.0" text="USERS" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnGenerator" alignment="CENTER" contentDisplay="CENTER" layoutX="2.0" layoutY="368.0" mnemonicParsing="false" onAction="#adminGenerator" prefHeight="50.0" prefWidth="113.0" text="GENERATE Line-UP" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="629.0" prefWidth="772.0" BorderPane.alignment="CENTER">
+         <children>
+            <TableView fx:id="tvOrders" layoutX="7.0" layoutY="4.0" onMouseClicked="#handleMouseAction" prefHeight="621.0" prefWidth="762.0">
+              <columns>
+                  <TableColumn fx:id="colId" prefWidth="30.4000244140625" text="ID" />
+                <TableColumn fx:id="colProduct" prefWidth="119.99993896484375" text="Product" />
+                <TableColumn fx:id="colUnits" prefWidth="75.0" text="Units" />
+                  <TableColumn fx:id="colQuantity" prefWidth="75.0" text="Quantity" />
+                  <TableColumn fx:id="colCompany" prefWidth="75.0" text="Company" />
+                  <TableColumn fx:id="colCompanyId" prefWidth="75.0" text="Company ID" />
+                  <TableColumn fx:id="colEmail" prefWidth="75.0" text="Email" />
+                  <TableColumn fx:id="colDeliveryAddress" prefWidth="75.0" text="DeliveryAddress" />
+                  <TableColumn fx:id="colCity" prefWidth="75.0" text="DelCity" />
+                  <TableColumn fx:id="colState" prefWidth="75.0" text="DelState" />
+                  <TableColumn fx:id="colZip" prefWidth="75.0" text="ZipCode" />
+                  <TableColumn fx:id="colCountry" prefWidth="75.0" text="DelCountry" />
+                  <TableColumn fx:id="colGooglN" prefWidth="75.0" text="GooglMaps N" />
+                  <TableColumn fx:id="colGooglE" prefWidth="75.0" text="GooglMaps E" />
+                  <TableColumn fx:id="colContact" prefWidth="75.0" text="ContactName" />
+                  <TableColumn fx:id="colPhone" prefWidth="75.0" text="Phone" />
+                  <TableColumn fx:id="colOther" prefWidth="75.0" text="Other Info" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>

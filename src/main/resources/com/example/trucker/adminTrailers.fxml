@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="1258.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.trucker.AdminTrailers">
+   <bottom>
+      <AnchorPane prefHeight="57.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="adminlogout" layoutX="8.0" layoutY="6.0" mnemonicParsing="false" onAction="#adminLogOut" text="Log Out">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnInsert" layoutX="165.0" layoutY="16.0" mnemonicParsing="false" onAction="#insertTrailer" prefHeight="25.0" prefWidth="87.0" style="-fx-background-color: green;" text="INSERT" textFill="WHITE" AnchorPane.topAnchor="16.0">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnUpdate" layoutX="265.0" layoutY="16.0" mnemonicParsing="false" onAction="#updateTrailer" prefHeight="25.0" prefWidth="87.0" style="-fx-background-color: yellow;" text="UPDATE" AnchorPane.topAnchor="16.0">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnDelete" layoutX="365.0" layoutY="14.0" mnemonicParsing="false" onAction="#deleteTrailer" prefHeight="25.0" prefWidth="87.0" style="-fx-background-color: red;" text="DELETE" AnchorPane.topAnchor="16.0">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </bottom>
+   <left>
+      <AnchorPane prefHeight="343.0" prefWidth="126.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="btnOrders" layoutX="4.0" layoutY="111.0" mnemonicParsing="false" onAction="#adminOrders" prefHeight="30.0" prefWidth="103.0" text="ORDERS">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnDrivers" layoutX="4.0" layoutY="149.0" mnemonicParsing="false" onAction="#adminDrivers" prefHeight="30.0" prefWidth="103.0" text="DRIVERS">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnTrucks" layoutX="4.0" layoutY="187.0" mnemonicParsing="false" onAction="#adminTrucks" prefHeight="30.0" prefWidth="103.0" text="TRUCKS">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnUsers" layoutX="4.0" layoutY="224.0" mnemonicParsing="false" onAction="#adminUsers" prefHeight="30.0" prefWidth="103.0" text="USERS">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnLineUp" layoutX="4.0" layoutY="263.0" mnemonicParsing="false" onAction="#adminGenerator" prefHeight="50.0" prefWidth="103.0" text="GENERATE LineUp" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="345.0" prefWidth="277.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox layoutX="-2.0" prefHeight="345.0" prefWidth="276.0">
+               <children>
+                  <AnchorPane prefHeight="37.0" prefWidth="301.0">
+                     <children>
+                        <Label layoutX="114.0" layoutY="3.0" text="TRAILERS">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="260.0" prefWidth="268.0">
+                     <children>
+                        <GridPane layoutX="12.0" layoutY="-2.0" prefHeight="262.0" prefWidth="260.0">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="165.66665649414062" minWidth="10.0" prefWidth="134.99998474121094" />
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="202.00001525878906" minWidth="10.0" prefWidth="202.00001525878906" />
+                          </columnConstraints>
+                          <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                 <children>
+                                    <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="4.0" layoutY="16.0" prefHeight="17.0" prefWidth="89.0" text="Trailer Name" textAlignment="CENTER" />
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1">
+                                 <children>
+                                    <TextField fx:id="tfName" layoutX="7.0" layoutY="7.0" prefHeight="25.0" prefWidth="180.0" promptText="Name" AnchorPane.leftAnchor="7.0" AnchorPane.rightAnchor="16.0" />
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1">
+                                 <children>
+                                    <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="27.0" layoutY="11.0" prefHeight="17.0" prefWidth="68.0" text="Model" textAlignment="CENTER" />
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                 <children>
+                                    <TextField fx:id="tfModel" layoutX="7.0" layoutY="7.0" prefHeight="25.0" prefWidth="180.0" promptText="Model" AnchorPane.leftAnchor="7.0" AnchorPane.rightAnchor="16.0" />
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="2">
+                                 <children>
+                                    <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="27.0" layoutY="11.0" prefHeight="17.0" prefWidth="68.0" text="Plate" textAlignment="CENTER" />
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                 <children>
+                                    <TextField fx:id="tfPlate" layoutX="9.0" layoutY="7.0" prefHeight="25.0" prefWidth="180.0" promptText="Plate" AnchorPane.leftAnchor="7.0" AnchorPane.rightAnchor="16.0" />
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="3">
+                                 <children>
+                                    <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="27.0" layoutY="10.0" prefHeight="17.0" prefWidth="67.0" text="MOT Date" textAlignment="CENTER" />
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                                 <children>
+                                    <TextField fx:id="tfMot" layoutX="27.0" layoutY="6.0" prefHeight="25.0" prefWidth="180.0" promptText="mm/dd/yyyy" AnchorPane.leftAnchor="7.0" AnchorPane.rightAnchor="16.0" />
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="4">
+                                 <children>
+                                    <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="27.0" layoutY="10.0" prefHeight="17.0" prefWidth="67.0" text="VIN" textAlignment="CENTER" />
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                                 <children>
+                                    <TextField fx:id="tfVin" layoutX="27.0" layoutY="6.0" prefHeight="25.0" prefWidth="180.0" promptText="xxxxxxxxxxxxxx" AnchorPane.leftAnchor="7.0" AnchorPane.rightAnchor="16.0" />
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="5">
+                                 <children>
+                                    <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="14.0" layoutY="10.0" prefHeight="17.0" prefWidth="79.0" text="Insurance Date" textAlignment="CENTER" />
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                                 <children>
+                                    <TextField fx:id="tfInsurance" layoutX="27.0" layoutY="11.0" prefHeight="25.0" prefWidth="180.0" promptText="mm/dd/yyyy" AnchorPane.leftAnchor="7.0" AnchorPane.rightAnchor="16.0" />
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="6">
+                                 <children>
+                                    <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="30.0" layoutY="10.0" prefHeight="17.0" prefWidth="60.0" text="Other" textAlignment="CENTER" />
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="6">
+                                 <children>
+                                    <TextArea fx:id="taOther" layoutX="22.0" layoutY="12.0" prefHeight="25.0" prefWidth="180.0" promptText="Other" AnchorPane.leftAnchor="7.0" AnchorPane.rightAnchor="16.0" />
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </GridPane>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="45.0" prefWidth="237.0">
+                     <children>
+                        <Label fx:id="lblError" alignment="CENTER" layoutX="20.0" layoutY="4.0" prefHeight="38.0" prefWidth="237.0" textAlignment="CENTER" textFill="RED" wrapText="true" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="19.0" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </center>
+   <right>
+      <AnchorPane prefHeight="343.0" prefWidth="830.0" BorderPane.alignment="CENTER">
+         <children>
+            <TableView fx:id="tvTrailers" layoutY="1.0" onMouseClicked="#handleMouseAction" prefHeight="342.0" prefWidth="822.0">
+              <columns>
+                <TableColumn fx:id="colId" prefWidth="29.666656494140625" text="ID" />
+                <TableColumn fx:id="colName" prefWidth="120.33334350585938" text="Name" />
+                  <TableColumn fx:id="colModel" prefWidth="119.66668701171875" text="Model" />
+                  <TableColumn fx:id="colPlate" prefWidth="75.0" text="Plate" />
+                  <TableColumn fx:id="colMot" prefWidth="97.66668701171875" text="MOT" />
+                  <TableColumn fx:id="colVin" prefWidth="193.66668701171875" text="VIN" />
+                  <TableColumn fx:id="colInsurance" prefWidth="92.3333740234375" text="Insurance" />
+                  <TableColumn fx:id="colOther" prefWidth="75.0" text="Other" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>

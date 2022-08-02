@@ -1,0 +1,21 @@
+
+L
+java:S3740#"/Provide the parametrized type for this generic.(¿øíÏ8ù×ª¥0
+†
+java:S1319"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(Î…†Ó
+
+java:S1319""pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(Ïõâ¸8û×ª¥0
+W	java:S107/"=Method has 29 parameters, which is greater than 7 authorized.(“ÎÏäûÿÿÿÿ
+c
+java:S2095ª"LUse try-with-resources or close this "BufferedWriter" in a "finally" clause.(Ğéœ½
+j
+java:S2095Ì"LUse try-with-resources or close this "BufferedReader" in a "finally" clause.(´ˆªè8¨„Ğª¥0
+f
+java:S2095«"HUse try-with-resources or close this "CSVPrinter" in a "finally" clause.(Ñóõñ8¨„Ğª¥0
+]	java:S125)"<This block of commented-out lines of code should be removed.(¾¿Ğºùÿÿÿÿ8¤ãª¥0
+Z	java:S106{"9Replace this use of System.out or System.err by a logger.(ÒÆçüşÿÿÿÿ8±„Ğª¥0
+U	java:S106}"9Replace this use of System.out or System.err by a logger.(Ä¼æ˜8µ„Ğª¥0
+[	java:S106›"9Replace this use of System.out or System.err by a logger.(ÄÂº¤úÿÿÿÿ8¶„Ğª¥0
+[	java:S106¥"9Replace this use of System.out or System.err by a logger.(¶ ÕÖùÿÿÿÿ8¹„Ğª¥0
+V	java:S106Ç"9Replace this use of System.out or System.err by a logger.(Ä¼æ˜8š×ª¥0
+^	java:S125ú"<This block of commented-out lines of code should be removed.(úŠ±Àûÿÿÿÿ8¾„Ğª¥0

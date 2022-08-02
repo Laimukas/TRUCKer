@@ -1,0 +1,6 @@
+
+b	java:S107"AConstructor has 8 parameters, which is greater than 7 authorized.(‘„ÿÈşÿÿÿÿ8óƒõÇ0
+v
+java:S1210"YOverride "equals(Object obj)" to comply with the contract of the "compareTo(T o)" method.(Ò×ƒÏ8Êé†È0
+E
+java:S3010"#Remove this assignment of "nextId".(´¦¯Ğüÿÿÿÿ8²õÇ0

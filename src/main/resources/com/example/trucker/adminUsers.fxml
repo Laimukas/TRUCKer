@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="441.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.trucker.AdminUsers">
+   <bottom>
+      <AnchorPane prefHeight="69.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="adminlogout" layoutX="246.0" layoutY="12.0" mnemonicParsing="false" onAction="#adminLogOut" text="Log Out">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </bottom>
+   <left>
+      <AnchorPane prefHeight="330.0" prefWidth="114.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="btnDrivers" layoutX="8.0" layoutY="131.0" mnemonicParsing="false" onAction="#adminDrivers" prefHeight="30.0" prefWidth="100.0" text="DRIVERS">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnTrucks" layoutX="8.0" layoutY="171.0" mnemonicParsing="false" onAction="#adminTrucks" prefHeight="30.0" prefWidth="100.0" text="TRUCKS">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnTrailers" layoutX="7.0" layoutY="211.0" mnemonicParsing="false" onAction="#adminTrailers" prefHeight="30.0" prefWidth="100.0" text="TRAILERS">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnOrder" layoutX="8.0" layoutY="88.0" mnemonicParsing="false" onAction="#adminOrders" prefHeight="30.0" prefWidth="100.0" text="ORDERS">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnGeneretor" alignment="CENTER" contentDisplay="CENTER" layoutX="7.0" layoutY="253.0" mnemonicParsing="false" onAction="#adminGenerator" prefHeight="50.0" prefWidth="100.0" text="GENERATE Line-UP" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="331.0" prefWidth="202.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="tfId" layoutX="8.0" layoutY="59.0" prefHeight="42.0" prefWidth="176.0" promptText="Id" />
+            <TextField fx:id="tfUsername" layoutX="9.0" layoutY="117.0" prefHeight="42.0" prefWidth="176.0" promptText="User Name" />
+            <TextField fx:id="tfPassword" layoutX="9.0" layoutY="179.0" prefHeight="42.0" prefWidth="176.0" promptText="Password" />
+            <Button fx:id="btnInsert" layoutX="9.0" layoutY="255.0" mnemonicParsing="false" onAction="#insertUser" style="-fx-background-color: green;" text="Insert" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnUpdate" layoutX="66.0" layoutY="255.0" mnemonicParsing="false" onAction="#updateUser" style="-fx-background-color: yellow;" text="Update">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnDelete" layoutX="135.0" layoutY="255.0" mnemonicParsing="false" onAction="#deleteUser" style="-fx-background-color: red;" text="Delete">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Label fx:id="lblnote" alignment="CENTER" contentDisplay="CENTER" layoutX="8.0" layoutY="293.0" prefHeight="65.0" prefWidth="186.0" textAlignment="CENTER" textFill="#eb0707" />
+            <Label layoutX="65.0" layoutY="14.0" text="USERS" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </center>
+   <right>
+      <AnchorPane prefHeight="331.0" prefWidth="284.0" BorderPane.alignment="CENTER">
+         <children>
+            <TableView fx:id="tvUsers" layoutX="3.0" layoutY="8.0" onMouseClicked="#handleMouseAction" prefHeight="364.0" prefWidth="279.0">
+              <columns>
+                  <TableColumn fx:id="colID" prefWidth="34.0" text="ID" />
+                <TableColumn fx:id="colName" prefWidth="129.0" text="Name" />
+                <TableColumn fx:id="colPass" prefWidth="105.0" text="PSW" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>

@@ -1,0 +1,33 @@
+
+Œ
+java:S1319 "pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(ó–?8Âÿ¨Å0
+’
+java:S1319&"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(±¼şúÿÿÿÿ8šÓº÷Ÿ0
+’
+java:S13190"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(ŠëÖçûÿÿÿÿ8éÆÄ 0
+X	java:S107:"<Method has 8 parameters, which is greater than 7 authorized.(«—Ú†8Âÿ¨Å0
+e
+java:S2095m"HUse try-with-resources or close this "CSVPrinter" in a "finally" clause.(Ñóõñ8…íĞÅ0
+o
+java:S2095„"LUse try-with-resources or close this "BufferedReader" in a "finally" clause.(à÷§îüÿÿÿÿ8ßßÙÅ0
+n
+java:S2095l"LUse try-with-resources or close this "BufferedWriter" in a "finally" clause.(û“ƒ²ùÿÿÿÿ8…íĞÅ0
+|
+java:S1450"_Remove the "trailersFullInfo" field and declare it as a local variable in the relevant methods.(Ì†ı8ƒÇÄ 0
+w
+java:S1450"[Remove the "trailersInfo" field and declare it as a local variable in the relevant methods.(“¸i8ô¾ÆÄ 0
+o	java:S100&"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(±¼şúÿÿÿÿ8ÕÓº÷Ÿ0
+U	java:S106+"9Replace this use of System.out or System.err by a logger.(Ñ¹Íş8ıÿ¨Å0
+o	java:S1000"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ŠëÖçûÿÿÿÿ8¢ÆÄ 0
+Z	java:S1065"9Replace this use of System.out or System.err by a logger.(ºôÛ¦ÿÿÿÿÿ8ÿÿ¨Å0
+U	java:S106L"9Replace this use of System.out or System.err by a logger.(±«¾·8‚€©Å0
+]
+java:S1612N"@Replace this lambda with method reference 'System.out::println'.(÷Ô»—8ÊË§Ç0
+U	java:S106N"9Replace this use of System.out or System.err by a logger.(÷Ô»—8„€©Å0
+T	java:S106]"9Replace this use of System.out or System.err by a logger.(ØÑ”t8ˆ€©Å0
+Z	java:S106g"9Replace this use of System.out or System.err by a logger.(äÌÖÙûÿÿÿÿ8åÓº÷Ÿ0
+]
+java:S1612"@Replace this lambda with method reference 'System.out::println'.(÷Ô»—8ÖË§Ç0
+U	java:S106"9Replace this use of System.out or System.err by a logger.(÷Ô»—8š­ÅÄ 0
+§
+java:S1130"ˆRemove the declaration of thrown exception 'com.example.trucker.exceptions.TRUCKerListError', as it cannot be thrown from method's body.(áÓº8ãË§Ç0

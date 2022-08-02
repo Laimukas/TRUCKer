@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="570.0" prefWidth="1160.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.trucker.DriversPage2">
+   <top>
+      <AnchorPane prefHeight="57.0" prefWidth="1160.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="407.0" layoutY="10.0" text="MAKE A DELIVERY">
+               <font>
+                  <Font name="Times New Roman Bold" size="36.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblOrderId" layoutX="16.0" layoutY="5.0" prefHeight="50.0" prefWidth="99.0" visible="false" />
+         </children>
+      </AnchorPane>
+   </top>
+   <left>
+      <AnchorPane prefHeight="424.0" prefWidth="437.0" BorderPane.alignment="CENTER">
+         <children>
+            <GridPane layoutX="10.0" layoutY="1.0" prefHeight="422.0" prefWidth="417.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="204.0" minWidth="10.0" prefWidth="147.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="278.0" minWidth="10.0" prefWidth="270.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" layoutX="7.0" layoutY="15.0" prefHeight="35.0" prefWidth="85.0" text="Driver" textAlignment="CENTER" AnchorPane.rightAnchor="4.0">
+                           <font>
+                              <Font name="System Bold Italic" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1">
+                     <children>
+                        <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" layoutX="60.0" layoutY="15.0" text="Truck" textAlignment="CENTER" AnchorPane.rightAnchor="4.0">
+                           <font>
+                              <Font name="System Bold Italic" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1">
+                     <children>
+                        <Label fx:id="lblDriver" alignment="CENTER" contentDisplay="CENTER" layoutX="7.0" layoutY="15.0" prefHeight="27.0" prefWidth="248.0" textAlignment="CENTER" underline="true" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="2.0">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <children>
+                        <Label fx:id="lblTruck" alignment="CENTER" contentDisplay="CENTER" layoutX="45.0" layoutY="15.0" prefHeight="27.0" prefWidth="173.0" textAlignment="CENTER" underline="true" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="2.0">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="2">
+                     <children>
+                        <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" layoutX="60.0" layoutY="15.0" text="Trailer" textAlignment="CENTER" AnchorPane.rightAnchor="4.0">
+                           <font>
+                              <Font name="System Bold Italic" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <children>
+                        <Label fx:id="lblTrailer" alignment="CENTER" contentDisplay="CENTER" layoutX="53.0" layoutY="15.0" prefHeight="27.0" prefWidth="160.0" textAlignment="CENTER" underline="true" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="2.0">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Separator layoutX="-149.0" layoutY="44.0" prefHeight="9.0" prefWidth="427.0" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="3">
+                     <children>
+                        <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" layoutX="60.0" layoutY="15.0" text="Product" textAlignment="CENTER" AnchorPane.rightAnchor="4.0">
+                           <font>
+                              <Font name="System Bold Italic" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                     <children>
+                        <Label fx:id="lblProduct" alignment="CENTER" contentDisplay="CENTER" layoutX="13.0" layoutY="15.0" prefHeight="27.0" prefWidth="242.0" textAlignment="CENTER" underline="true" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="2.0">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="4">
+                     <children>
+                        <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" layoutX="60.0" layoutY="15.0" text="Units" textAlignment="CENTER" AnchorPane.rightAnchor="4.0">
+                           <font>
+                              <Font name="System Bold Italic" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                     <children>
+                        <Label fx:id="lblUnits" alignment="CENTER" contentDisplay="CENTER" layoutX="121.0" layoutY="15.0" textAlignment="CENTER" underline="true" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="2.0">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="5">
+                     <children>
+                        <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" layoutX="60.0" layoutY="15.0" text="Quantity" textAlignment="CENTER" AnchorPane.rightAnchor="4.0">
+                           <font>
+                              <Font name="System Bold Italic" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                     <children>
+                        <Label fx:id="lblQuantity" alignment="CENTER" contentDisplay="CENTER" layoutX="121.0" layoutY="15.0" textAlignment="CENTER" underline="true" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="2.0">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="6">
+                     <children>
+                        <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" layoutX="60.0" layoutY="15.0" text="Contact" textAlignment="CENTER" AnchorPane.rightAnchor="4.0">
+                           <font>
+                              <Font name="System Bold Italic" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="6">
+                     <children>
+                        <Label fx:id="lblContact" alignment="CENTER" contentDisplay="CENTER" layoutX="121.0" layoutY="15.0" textAlignment="CENTER" underline="true" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="2.0">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="7">
+                     <children>
+                        <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" layoutX="60.0" layoutY="15.0" text="Phone" textAlignment="CENTER" AnchorPane.rightAnchor="4.0">
+                           <font>
+                              <Font name="System Bold Italic" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="7">
+                     <children>
+                        <Label fx:id="lblPhone" alignment="CENTER" contentDisplay="CENTER" layoutX="121.0" layoutY="15.0" textAlignment="CENTER" underline="true" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="2.0">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="8">
+                     <children>
+                        <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" layoutX="30.0" layoutY="15.0" text="Delivery Address" textAlignment="CENTER" AnchorPane.rightAnchor="4.0">
+                           <font>
+                              <Font name="System Bold Italic" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="8">
+                     <children>
+                        <Label fx:id="lblAddress" alignment="CENTER" contentDisplay="CENTER" layoutX="121.0" layoutY="15.0" textAlignment="CENTER" underline="true" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="2.0">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="9">
+                     <children>
+                        <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" layoutX="60.0" layoutY="11.0" text="City" textAlignment="CENTER" AnchorPane.rightAnchor="4.0">
+                           <font>
+                              <Font name="System Bold Italic" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="9">
+                     <children>
+                        <Label fx:id="lblCity" alignment="CENTER" contentDisplay="CENTER" layoutX="121.0" layoutY="11.0" textAlignment="CENTER" underline="true" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="2.0">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="10">
+                     <children>
+                        <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" layoutX="52.0" layoutY="11.0" text="Country" textAlignment="CENTER" AnchorPane.rightAnchor="4.0">
+                           <font>
+                              <Font name="System Bold Italic" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="10">
+                     <children>
+                        <Label fx:id="lblCountry" alignment="CENTER" contentDisplay="CENTER" layoutX="121.0" layoutY="11.0" textAlignment="CENTER" underline="true" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="2.0">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </GridPane>
+         </children>
+      </AnchorPane>
+   </left>
+   <bottom>
+      <AnchorPane prefHeight="75.0" prefWidth="1160.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="btnStart" alignment="CENTER" layoutX="469.0" layoutY="12.0" mnemonicParsing="false" onAction="#startDelivery" style="-fx-background-color: green;" text="START DELIVERY" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Button>
+            <Label fx:id="lblError" alignment="CENTER" layoutX="4.0" layoutY="3.0" prefHeight="69.0" prefWidth="458.0" textFill="RED" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </bottom>
+   <center>
+      <AnchorPane prefHeight="424.0" prefWidth="731.0" BorderPane.alignment="CENTER">
+         <children>
+            <TableView fx:id="tvLineUps" layoutX="2.0" layoutY="1.0" onMouseClicked="#handleMouseAction" onSort="#insertLineUpToTable" prefHeight="408.0" prefWidth="712.0">
+              <columns>
+                <TableColumn fx:id="colId" prefWidth="29.0" text="ID" />
+                <TableColumn fx:id="colOrderId" prefWidth="45.0" text="Ord_ID" />
+                  <TableColumn fx:id="colProduct" prefWidth="109.0" text="Product" />
+                  <TableColumn fx:id="colUnits" prefWidth="70.0" text="Units" />
+                  <TableColumn fx:id="colQuantity" prefWidth="55.0" text="Quantity" />
+                  <TableColumn fx:id="colContact" prefWidth="104.0" text="Contact" />
+                  <TableColumn fx:id="colPhone" prefWidth="85.0" text="Phone" />
+                  <TableColumn fx:id="colDelAddress" prefWidth="103.0" text="Del. Address" />
+                  <TableColumn fx:id="colCity" prefWidth="75.0" text="City" />
+                  <TableColumn fx:id="colCountry" prefWidth="75.0" text="Country" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

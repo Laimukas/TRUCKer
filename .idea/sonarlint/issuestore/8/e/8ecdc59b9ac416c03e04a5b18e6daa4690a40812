@@ -1,0 +1,55 @@
+
+`	java:S112A"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ
+E
+java:S3740"/Provide the parametrized type for this generic.(Ç‹ì´
+E
+java:S3740"/Provide the parametrized type for this generic.(Œà•®
+J
+java:S3740!"/Provide the parametrized type for this generic.(Ë¤ÿÿÿÿÿ
+l
+java:S11049"WMake listOfUsers a static final constant or non-public and provide accessors if needed.(³éÎd
+F
+java:S14449"1Make this "public static listOfUsers" field final(³éÎd
+[
+java:S2583‰"DChange this condition so that it does not always evaluate to "false"(ºá
+Z
+java:S2583n"DChange this condition so that it does not always evaluate to "false"(ºá
+Z
+java:S2583Y"DChange this condition so that it does not always evaluate to "false"(Éâï—
+i	java:S1167"MRename this field "ID" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(»ŞÒï8É‘©¶ 0
+M	java:S106D"9Replace this use of System.out or System.err by a logger.(¬‡Ä{
+N	java:S106F"9Replace this use of System.out or System.err by a logger.(Å—
+<
+java:S2386K"&Make member "listOfUsers" "protected".(Ì£¤Ö
+L
+java:S2696K"6Make the enclosing method "static" or remove this set.(Ì£¤Ö
+B
+java:S1172R",Remove this unused method parameter "event".(˜ı¯¼
+
+java:S1130V"lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(‘ó×ùÿÿÿÿ8®÷ò¹ 0
+b
+java:S1858X"E"ID" is already a string, there's no need to call "toString()" on it.(ıƒÒ8ãÅº¶ 0
+b
+java:S1858]"E"ID" is already a string, there's no need to call "toString()" on it.(ß£ğà8²‡¼¶ 0
+B
+java:S1172g",Remove this unused method parameter "event".(äşÌ
+ˆ
+java:S1130k"lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(Ä¯A8´÷ò¹ 0
+a
+java:S1858m"E"ID" is already a string, there's no need to call "toString()" on it.(³ÚW8öˆ¾¶ 0
+C
+java:S1172‚",Remove this unused method parameter "event".(«¸éä
+
+java:S1130…"lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(‘Œéøÿÿÿÿ8¹÷ò¹ 0
+C
+java:S1172˜",Remove this unused method parameter "event".(ƒ‹½Æ
+H
+java:S1172",Remove this unused method parameter "event".(Ø †¤şÿÿÿÿ
+H
+java:S1172¢",Remove this unused method parameter "event".(Ğµæ¨ÿÿÿÿÿ
+C
+java:S1172§",Remove this unused method parameter "event".(™ÂÂ—
+C
+java:S1172¬",Remove this unused method parameter "event".(éŸÆì
+I
+java:S1172±",Remove this unused method parameter "event".(Ø„Ñ)8éÃù³ 0

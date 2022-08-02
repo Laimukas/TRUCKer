@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="1160.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.trucker.DriversPage">
+   <bottom>
+      <AnchorPane prefHeight="77.0" prefWidth="1159.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="driverlogout" layoutX="14.0" layoutY="16.0" mnemonicParsing="false" onAction="#driverLogOut" text="Log Out">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Button>
+            <Label fx:id="lblError" alignment="CENTER" contentDisplay="CENTER" layoutX="135.0" layoutY="8.0" prefHeight="59.0" prefWidth="1014.0" textAlignment="CENTER" textFill="RED">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </bottom>
+   <top>
+      <AnchorPane prefHeight="64.0" prefWidth="1159.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="286.0" layoutY="8.0" prefHeight="52.0" prefWidth="587.0" text="DRIVERS MAIN PAGE" textAlignment="CENTER">
+               <font>
+                  <Font name="Times New Roman Bold" size="36.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </top>
+   <left>
+      <AnchorPane prefHeight="405.0" prefWidth="441.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox layoutX="1.0" layoutY="2.0" prefHeight="399.0" prefWidth="436.0">
+               <children>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="RIGHT" layoutX="14.0" layoutY="8.0" prefHeight="50.0" prefWidth="70.0" text="Hi" textAlignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblName" contentDisplay="CENTER" layoutX="75.0" layoutY="8.0" prefHeight="50.0" prefWidth="357.0" textAlignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <ChoiceBox fx:id="cbTrucks" layoutX="11.0" layoutY="3.0" prefHeight="60.0" prefWidth="415.0" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <TextField fx:id="tfTruck" alignment="CENTER" layoutX="11.0" layoutY="3.0" prefHeight="60.0" prefWidth="415.0" promptText="Truck">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <ChoiceBox fx:id="cbTrailers" layoutX="11.0" layoutY="4.0" prefHeight="60.0" prefWidth="415.0" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <TextField fx:id="tfTrailer" alignment="CENTER" layoutX="11.0" layoutY="4.0" prefHeight="60.0" prefWidth="415.0" promptText="Trailer">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="btnBegin" alignment="CENTER" contentDisplay="CENTER" layoutX="118.0" layoutY="4.0" mnemonicParsing="false" onAction="#letsBegin" prefHeight="60.0" prefWidth="200.0" text="LET'S BEGIN" textAlignment="CENTER" AnchorPane.bottomAnchor="3.0">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="405.0" prefWidth="715.0" BorderPane.alignment="CENTER">
+         <children>
+            <TableView fx:id="tvMadeOrders" layoutX="-2.0" layoutY="45.0" prefHeight="289.0" prefWidth="705.0">
+              <columns>
+                <TableColumn prefWidth="75.0" text="C1" />
+                <TableColumn prefWidth="75.0" text="C2" />
+              </columns>
+            </TableView>
+            <Button fx:id="btnDelete" alignment="CENTER" contentDisplay="CENTER" layoutX="231.0" layoutY="341.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="200.0" style="-fx-background-color: red;" text="DELETE" textAlignment="CENTER" AnchorPane.bottomAnchor="8.0">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Button>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="4.0" layoutY="4.0" prefHeight="38.0" prefWidth="700.0" text="LIST OF MADE ORDERS" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

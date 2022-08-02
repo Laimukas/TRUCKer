@@ -1,0 +1,65 @@
+
+`	java:S112S"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ
+J
+java:S3740%"/Provide the parametrized type for this generic.(ºšãÿıÿÿÿÿ
+E
+java:S3740'"/Provide the parametrized type for this generic.(Œà•®
+E
+java:S3740)"/Provide the parametrized type for this generic.(ñûãİ
+J
+java:S3740+"/Provide the parametrized type for this generic.(Àîş¥ÿÿÿÿÿ
+E
+java:S3740-"/Provide the parametrized type for this generic.(”ªÉ
+J
+java:S3740/"/Provide the parametrized type for this generic.(»ºØ†ÿÿÿÿÿ
+J
+java:S37401"/Provide the parametrized type for this generic.(öòÁÁÿÿÿÿÿ
+E
+java:S37403"/Provide the parametrized type for this generic.(¨æ¸á
+p
+java:S1104K"ZMake listOfTrailers a static final constant or non-public and provide accessors if needed.(ÆëëÛ
+J
+java:S1444K"4Make this "public static listOfTrailers" field final(ÆëëÛ
+[
+java:S2583·"DChange this condition so that it does not always evaluate to "false"(›–‡
+[
+java:S2583‚"DChange this condition so that it does not always evaluate to "false"(›–‡
+[
+java:S2583˜"DChange this condition so that it does not always evaluate to "false"(›–‡
+b	java:S116I"MRename this field "ID" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(»ŞÒï
+M	java:S106V"9Replace this use of System.out or System.err by a logger.(¬‡Ä{
+S	java:S106X"9Replace this use of System.out or System.err by a logger.(íì¾“øÿÿÿÿ
+?
+java:S2386f")Make member "listOfTrailers" "protected".(ó½¼½
+L
+java:S2696f"6Make the enclosing method "static" or remove this set.(ó½¼½
+B
+java:S1172z",Remove this unused method parameter "event".(‘¼Ö£
+‚
+java:S1130~"lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(öèí
+\
+java:S1858€"E"ID" is already a string, there's no need to call "toString()" on it.(§Ü”™
+a
+java:S1858†"E"ID" is already a string, there's no need to call "toString()" on it.(‘Â…¤üÿÿÿÿ
+C
+java:S1172",Remove this unused method parameter "event".(Ü§€Ú
+ƒ
+java:S1130”"lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(¿¤£
+\
+java:S1858–"E"ID" is already a string, there's no need to call "toString()" on it.(§Ü”™
+C
+java:S1172¯",Remove this unused method parameter "event".(±ï Í
+ˆ
+java:S1130³"lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(‰òòÿÿÿÿÿ
+C
+java:S1172Ã",Remove this unused method parameter "event".(ƒ‹½Æ
+H
+java:S1172È",Remove this unused method parameter "event".(Ğµæ¨ÿÿÿÿÿ
+C
+java:S1172Í",Remove this unused method parameter "event".(™ÂÂ—
+C
+java:S1172Ò",Remove this unused method parameter "event".(éŸÆì
+C
+java:S1172×",Remove this unused method parameter "event".(õ™ñ
+B
+java:S1172Ü",Remove this unused method parameter "event".(Ø„Ñ)

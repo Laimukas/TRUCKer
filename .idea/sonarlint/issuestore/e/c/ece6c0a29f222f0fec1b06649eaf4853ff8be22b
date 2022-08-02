@@ -1,0 +1,44 @@
+
+‹
+java:S1319"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(—¥Ñ‹øÿÿÿÿ
+‹
+java:S13192"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(ˆ’òøýÿÿÿÿ
+‹
+java:S1319<"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(ûÍÌÏùÿÿÿÿ
+V	java:S107T"<Method has 8 parameters, which is greater than 7 authorized.(ªÉ—Èýÿÿÿÿ
+c
+java:S2095¸"LUse try-with-resources or close this "BufferedReader" in a "finally" clause.(¢á¹¢
+_
+java:S2095"HUse try-with-resources or close this "CSVPrinter" in a "finally" clause.(Ñóõñ
+h
+java:S2095Ž"LUse try-with-resources or close this "BufferedWriter" in a "finally" clause.(•ÖÓ”ùÿÿÿÿ
+€
+java:S1450"^Remove the "driversFullInfo" field and declare it as a local variable in the relevant methods.(—Ë‡«þÿÿÿÿ8äèž·£0
+p
+java:S1450"ZRemove the "driversName" field and declare it as a local variable in the relevant methods.(µôËð
+Q	java:S125"<This block of commented-out lines of code should be removed.(ñ¼³â
+h	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(—¥Ñ‹øÿÿÿÿ
+S	java:S106$"9Replace this use of System.out or System.err by a logger.(”²úíÿÿÿÿÿ
+h	java:S1002"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ˆ’òøýÿÿÿÿ
+Q	java:S125)"<This block of commented-out lines of code should be removed.(Û“¤
+V	java:S125."<This block of commented-out lines of code should be removed.(µÜÂ£üÿÿÿÿ
+S	java:S1067"9Replace this use of System.out or System.err by a logger.(°ðÒöýÿÿÿÿ
+V	java:S125@"<This block of commented-out lines of code should be removed.(½òËòüÿÿÿÿ
+S	java:S106J"9Replace this use of System.out or System.err by a logger.(ÌøÀñýÿÿÿÿ
+S	java:S106P"9Replace this use of System.out or System.err by a logger.(¯±®¡úÿÿÿÿ
+V	java:S125b"<This block of commented-out lines of code should be removed.(¬¼§™ÿÿÿÿÿ
+S	java:S106n"9Replace this use of System.out or System.err by a logger.(Ï÷‘Úüÿÿÿÿ
+V
+java:S1612p"@Replace this lambda with method reference 'System.out::println'.(€ì½Ë
+N	java:S106p"9Replace this use of System.out or System.err by a logger.(€ì½Ë
+N	java:S106"9Replace this use of System.out or System.err by a logger.(¨ŠÓÙ
+T	java:S106‰"9Replace this use of System.out or System.err by a logger.(û¾ú¡ÿÿÿÿÿ
+W
+java:S1612¡"@Replace this lambda with method reference 'System.out::println'.(€ì½Ë
+O	java:S106¡"9Replace this use of System.out or System.err by a logger.(€ì½Ë
+e
+java:S1172¤"IRemove these unused method parameters "newAddress", "newEmail", "newPSW".(ºôÌ‰þÿÿÿÿ
+T	java:S106¬"9Replace this use of System.out or System.err by a logger.(ÌøÀñýÿÿÿÿ
+T	java:S106²"9Replace this use of System.out or System.err by a logger.(¯±®¡úÿÿÿÿ
+ 
+java:S1130Â"ˆRemove the declaration of thrown exception 'com.example.trucker.exceptions.TRUCKerListError', as it cannot be thrown from method's body.(áÓº

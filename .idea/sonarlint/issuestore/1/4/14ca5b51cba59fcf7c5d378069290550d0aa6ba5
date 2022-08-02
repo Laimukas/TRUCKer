@@ -1,0 +1,67 @@
+
+`	java:S112Z"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ
+J
+java:S3740'"/Provide the parametrized type for this generic.(ºšãÿıÿÿÿÿ
+E
+java:S3740)"/Provide the parametrized type for this generic.(Œà•®
+E
+java:S3740+"/Provide the parametrized type for this generic.(·²Ü
+J
+java:S3740-"/Provide the parametrized type for this generic.(Å“×ııÿÿÿÿ
+E
+java:S3740/"/Provide the parametrized type for this generic.(´°æ¸
+J
+java:S37401"/Provide the parametrized type for this generic.(æÔÜ¼ûÿÿÿÿ
+J
+java:S37403"/Provide the parametrized type for this generic.(”Ú£öÿÿÿÿÿ
+J
+java:S37405"/Provide the parametrized type for this generic.(ı·ø´üÿÿÿÿ
+t
+java:S1104R"YMake listOfDrivers a static final constant or non-public and provide accessors if needed.(«ø«ıÿÿÿÿ
+N
+java:S1444R"3Make this "public static listOfDrivers" field final(«ø«ıÿÿÿÿ
+[
+java:S2583Ù"DChange this condition so that it does not always evaluate to "false"(ºá
+`
+java:S2583Ô"DChange this condition so that it does not always evaluate to "false"(¥õ…¼úÿÿÿÿ
+b	java:S116K"MRename this field "ID" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(»ŞÒï
+—
+java:S1186N"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ÅãèÖ
+M	java:S106]"9Replace this use of System.out or System.err by a logger.(¬‡Ä{
+S	java:S106_"9Replace this use of System.out or System.err by a logger.(×´µ¾ûÿÿÿÿ
+C
+java:S2386m"(Make member "listOfDrivers" "protected".(ÓŸ¹Ùûÿÿÿÿ
+Q
+java:S2696m"6Make the enclosing method "static" or remove this set.(ÓŸ¹Ùûÿÿÿÿ
+H
+java:S1172€",Remove this unused method parameter "event".(÷Ôà´ùÿÿÿÿ
+ƒ
+java:S1130„"lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(©š®»
+R	java:S125"<This block of commented-out lines of code should be removed.(ƒ€­Ÿ
+\
+java:S1858”"E"ID" is already a string, there's no need to call "toString()" on it.(¹Ûä
+R	java:S125˜"<This block of commented-out lines of code should be removed.(Åö¿ 
+H
+java:S1172¢",Remove this unused method parameter "event".(ôØÜƒøÿÿÿÿ
+ƒ
+java:S1130¦"lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(Ëµû¿
+C
+java:S1172Ì",Remove this unused method parameter "event".(õæñè
+ˆ
+java:S1130Ğ"lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(¯­»ùÿÿÿÿ
+C
+java:S1172ê",Remove this unused method parameter "event".(ƒ‹½Æ
+H
+java:S1172ï",Remove this unused method parameter "event".(Ø †¤şÿÿÿÿ
+H
+java:S1172ô",Remove this unused method parameter "event".(Ğµæ¨ÿÿÿÿÿ
+C
+java:S1172ù",Remove this unused method parameter "event".(éŸÆì
+C
+java:S1172ş",Remove this unused method parameter "event".(õ™ñ
+B
+java:S1172ƒ",Remove this unused method parameter "event".(Ø„Ñ)
+P
+java:S1128";Remove this unused import 'javafx.application.Application'.(í™şj
+E
+java:S1068L"*Remove this unused "userID" private field.(³ ûÁÿÿÿÿÿ
