@@ -105,8 +105,25 @@
          <children>
             <TableView fx:id="tvMadeOrders" layoutX="-2.0" layoutY="45.0" prefHeight="289.0" prefWidth="705.0">
               <columns>
-                <TableColumn prefWidth="75.0" text="C1" />
-                <TableColumn prefWidth="75.0" text="C2" />
+                <TableColumn fx:id="col_id" prefWidth="30.40002405643463" text="Id" />
+                <TableColumn fx:id="col_gen_id" prefWidth="40.79998970031738" text="Gen_Id" />
+                  <TableColumn fx:id="col_ord_id" prefWidth="37.60003662109375" text="Ord_Id" />
+                  <TableColumn fx:id="col_product" prefWidth="150.39995574951172" text="Product" />
+                  <TableColumn fx:id="col_units" prefWidth="73.60003662109375" text="Units" />
+                  <TableColumn fx:id="col_quantity" prefWidth="56.0" text="Quantity" />
+                  <TableColumn fx:id="col_company" prefWidth="139.19998168945312" text="Company" />
+                  <TableColumn fx:id="col_contact" prefWidth="75.0" text="Contact" />
+                  <TableColumn fx:id="col_phone" prefWidth="75.0" text="Phone" />
+                  <TableColumn fx:id="col_address" prefWidth="75.0" text="Address" />
+                  <TableColumn fx:id="col_city" prefWidth="75.0" text="City" />
+                  <TableColumn fx:id="col_country" prefWidth="75.0" text="Country" />
+                  <TableColumn fx:id="col_started" prefWidth="75.0" text="Started" />
+                  <TableColumn fx:id="col_finished" prefWidth="75.0" text="Finished" />
+                  <TableColumn fx:id="col_signed" prefWidth="75.0" text="Signed" />
+                  <TableColumn fx:id="col_person_signed" prefWidth="75.0" text="Person Signed" />
+                  <TableColumn fx:id="col_truck" prefWidth="75.0" text="Truck" />
+                  <TableColumn fx:id="col_trailer" prefWidth="75.0" text="Trailer" />
+                  <TableColumn fx:id="col_status" prefWidth="75.0" text="Status" />
               </columns>
             </TableView>
             <Button fx:id="btnDelete" alignment="CENTER" contentDisplay="CENTER" layoutX="231.0" layoutY="341.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="200.0" style="-fx-background-color: red;" text="DELETE" textAlignment="CENTER" AnchorPane.bottomAnchor="8.0">

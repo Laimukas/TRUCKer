@@ -33,7 +33,8 @@ public class FinishedOrderList {
 
     public ArrayList<FinishedOrder> getListFinishedOrdersWhoMachesDriver(String driver) throws TRUCKerListError {
         ArrayList<FinishedOrder> ordersWeNeed = new ArrayList();
-        printFinishedOrders();
+        getListOfFinishedOrders();
+//        printFinishedOrders();
         for (FinishedOrder lineUp : finishedOrders) {
             //
             if (lineUp.getDriver().equals(driver)) {
@@ -44,7 +45,7 @@ public class FinishedOrderList {
         return ordersWeNeed;
     }
 
-    public void setFinishedOrder(int newId, String newGeneratorId, String newOrderId, String newOrderProduct, String newOrderUnits,
+    public void setFinishedOrderByData(int newId, String newGeneratorId, String newOrderId, String newOrderProduct, String newOrderUnits,
                                  String newOrderQuantity, String newCompany, String newCompanyId, String newEmail,
                                  String newOrderContact, String newOrderPhone, String newOrderDelAddress, String newOrderCity,
                                  String newState, String newOrderCountry, String newOrderGoogleN, String newOrderGoogleE,
@@ -76,7 +77,7 @@ public class FinishedOrderList {
         getFinishedOrders();
     }
 
-    public void setLineUp(FinishedOrder newFinishedOrder) throws TRUCKerListError {
+    public void setFinishedOrderByObject(FinishedOrder newFinishedOrder) throws TRUCKerListError {
         getFinishedOrders();
         for (FinishedOrder lineUp : finishedOrders) {
             if (lineUp.getId() == newFinishedOrder.getId() || lineUp.getGeneratorId().equals(newFinishedOrder.getGeneratorId()) ||
@@ -156,6 +157,7 @@ public class FinishedOrderList {
     }
 
     public void addFinishedOrderToList(FinishedOrder finishedOrder) throws TRUCKerListError {
+        getFinishedOrders();
         if (finishedOrder == null) {
             throw new TRUCKerListError("Fill all the requiered fields to add Line-Up!");
         }

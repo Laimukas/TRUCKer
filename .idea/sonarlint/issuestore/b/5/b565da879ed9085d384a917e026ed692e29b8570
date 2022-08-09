@@ -1,9 +1,0 @@
-
-W
-java:S4973-"<Strings and Boxed types should be compared using "equals()".(÷åîÄıÿÿÿÿ
-W
-java:S49732"<Strings and Boxed types should be compared using "equals()".(¹Ó„Ğúÿÿÿÿ
-œ
-java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ØÈÙ­üÿÿÿÿ
-Q	java:S125L"<This block of commented-out lines of code should be removed.(åÚÄæ
-V	java:S125Q"<This block of commented-out lines of code should be removed.(ç–¡ÿÿÿÿÿ

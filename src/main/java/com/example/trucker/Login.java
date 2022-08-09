@@ -58,6 +58,7 @@ public class Login implements Initializable {
             //access the controller and call a method
             DriversPage controller = loader.getController();
             controller.initData(driverList.getDriverByUserName(name));
+            controller.insertFinishedOrdersToTable(name);
 
             //This line gets the Stage information
 
