@@ -1,24 +1,0 @@
-
-y
-java:S1450"^Remove the "selectedAddress" field and declare it as a local variable in the relevant methods.(áœß©şÿÿÿÿ
-v
-java:S1450"[Remove the "selectedCity" field and declare it as a local variable in the relevant methods.(Æ•ÏÎûÿÿÿÿ
-y
-java:S1450"^Remove the "selectedCompany" field and declare it as a local variable in the relevant methods.(ûÁïÀûÿÿÿÿ
-y
-java:S1450"^Remove the "selectedContact" field and declare it as a local variable in the relevant methods.(ò‚¿öøÿÿÿÿ
-t
-java:S1450"^Remove the "selectedCountry" field and declare it as a local variable in the relevant methods.(›àÌõ
-z
-java:S1450"]Remove the "selectedDriver" field and declare it as a local variable in the relevant methods.(ÄÎ¾Ô8ø—Á¬¥0
-w
-java:S1450"\Remove the "selectedPhone" field and declare it as a local variable in the relevant methods.(¦™şôüÿÿÿÿ
-r
-java:S1450"\Remove the "selectedStart" field and declare it as a local variable in the relevant methods.(é§“¹
-y
-java:S1450"^Remove the "selectedTrailer" field and declare it as a local variable in the relevant methods.(‹ê‘‘úÿÿÿÿ
-r
-java:S1450"\Remove the "selectedTruck" field and declare it as a local variable in the relevant methods.(³ğúã
-c
-java:S3457f"AFormat specifiers should be used instead of string concatenation.(Üòí¹øÿÿÿÿ8ù­ì£¥0
-U	java:S106i"9Replace this use of System.out or System.err by a logger.(ØÛñ8òéÏ¤¥0

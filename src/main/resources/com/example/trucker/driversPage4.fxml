@@ -419,11 +419,16 @@
    <bottom>
       <AnchorPane prefHeight="86.0" prefWidth="600.0" BorderPane.alignment="CENTER">
          <children>
-            <Button layoutX="433.0" layoutY="16.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="295.0" style="-fx-background-color: RED;" text="SIGN THE ORDER" textFill="WHITE">
+            <Button layoutX="433.0" layoutY="16.0" mnemonicParsing="false" onAction="#signTheOrder" prefHeight="55.0" prefWidth="295.0" style="-fx-background-color: RED;" text="SIGN THE ORDER" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="24.0" />
                </font>
             </Button>
+            <Label fx:id="lblError" alignment="CENTER" layoutX="10.0" layoutY="7.0" prefHeight="69.0" prefWidth="405.0" textFill="RED" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
          </children>
       </AnchorPane>
    </bottom>

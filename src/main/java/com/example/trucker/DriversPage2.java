@@ -33,7 +33,9 @@ public class DriversPage2 implements Initializable {
     private String selectedTrailer;
 
     private ArrayList<Generator> lineUps;
+
     GeneratorList lineUp;
+
 
     @FXML
     private Label lblDriver;
@@ -126,67 +128,65 @@ public class DriversPage2 implements Initializable {
         }
     }
 
-        @FXML
-        private void handleMouseAction (MouseEvent event){
-            Generator mouseGenerator = tvLineUps.getSelectionModel().getSelectedItem();
+    @FXML
+    private void handleMouseAction(MouseEvent event) {
+        Generator mouseGenerator = tvLineUps.getSelectionModel().getSelectedItem();
 
-            lblOrderId.setText(mouseGenerator.getOrderId());
-            lblProduct.setText(mouseGenerator.getOrderProduct());
-            lblUnits.setText(mouseGenerator.getOrderUnits());
-            lblQuantity.setText(mouseGenerator.getOrderQuantity());
-            lblContact.setText(mouseGenerator.getOrderContact());
-            lblPhone.setText(mouseGenerator.getOrderPhone());
-            lblAddress.setText(mouseGenerator.getOrderDelAddress());
-            lblCity.setText(mouseGenerator.getOrderCity());
-            lblCountry.setText(mouseGenerator.getOrderCountry());
+        lblOrderId.setText(mouseGenerator.getOrderId());
+        lblProduct.setText(mouseGenerator.getOrderProduct());
+        lblUnits.setText(mouseGenerator.getOrderUnits());
+        lblQuantity.setText(mouseGenerator.getOrderQuantity());
+        lblContact.setText(mouseGenerator.getOrderContact());
+        lblPhone.setText(mouseGenerator.getOrderPhone());
+        lblAddress.setText(mouseGenerator.getOrderDelAddress());
+        lblCity.setText(mouseGenerator.getOrderCity());
+        lblCountry.setText(mouseGenerator.getOrderCountry());
 
-        }
-
-
-        public void initData2 (String driver, String truck, String trailer) throws TRUCKerListError {
-            selectedDriver = driver;
-            lblDriver.setText(selectedDriver);
-            selectedTruck = truck;
-            lblTruck.setText(selectedTruck);
-            selectedTrailer = trailer;
-            lblTrailer.setText(selectedTrailer);
-
-        }
-
-        public void initialize (URL url, ResourceBundle resourceBundle){
-            lineUp = new GeneratorList();
-
-            insertLineUpToTable();
-
-        }
-
-        public void insertLineUpToTable () {
-
-        }
-
-        public void insertLineUpToTable2 (String driver, String truck, String trailer) throws TRUCKerListError {
-
-            System.out.println("Loading table");
-
-            lineUp.getListLineUpsWhoMachesDriverTruckTrailer(driver, truck, trailer).forEach(
-                    lu -> System.out.println(lu.getId() + "," + lu.getOrderId() + "," + lu.getOrderProduct() + "," +
-                            lu.getOrderUnits() + "," + lu.getOrderQuantity() + "," + lu.getOrderContact() + "," +
-                            lu.getOrderPhone() + "," + lu.getOrderDelAddress() + "," + lu.getOrderCity() + "," +
-                            lu.getOrderCountry()));
-
-            colId.setCellValueFactory(new PropertyValueFactory<Generator, String>("id"));
-            colOrderId.setCellValueFactory(new PropertyValueFactory<Generator, String>("orderId"));
-            colProduct.setCellValueFactory(new PropertyValueFactory<Generator, String>("orderProduct"));
-            colUnits.setCellValueFactory(new PropertyValueFactory<Generator, String>("orderUnits"));
-            colQuantity.setCellValueFactory(new PropertyValueFactory<Generator, String>("orderQuantity"));
-            colContact.setCellValueFactory(new PropertyValueFactory<Generator, String>("orderContact"));
-            colPhone.setCellValueFactory(new PropertyValueFactory<Generator, String>("orderPhone"));
-            colDelAddress.setCellValueFactory(new PropertyValueFactory<Generator, String>("orderDelAddress"));
-            colCity.setCellValueFactory(new PropertyValueFactory<Generator, String>("orderCity"));
-            colCountry.setCellValueFactory(new PropertyValueFactory<Generator, String>("orderCountry"));
-
-            listOfLineUps = FXCollections.observableArrayList(lineUp.getListLineUpsWhoMachesDriverTruckTrailer(driver, truck, trailer));
-
-            tvLineUps.setItems(listOfLineUps);
-        }
     }
+
+
+    public void initData2(String driver, String truck, String trailer) throws TRUCKerListError {
+        selectedDriver = driver;
+        lblDriver.setText(selectedDriver);
+        selectedTruck = truck;
+        lblTruck.setText(selectedTruck);
+        selectedTrailer = trailer;
+        lblTrailer.setText(selectedTrailer);
+    }
+
+
+    public void initialize(URL url, ResourceBundle resourceBundle) {
+        lineUp = new GeneratorList();
+        insertLineUpToTable();
+    }
+
+    public void insertLineUpToTable () {
+
+    }
+
+    public void insertLineUpToTable2(String driver, String truck, String trailer) throws TRUCKerListError {
+
+        System.out.println("Loading table");
+
+        lineUp.getListLineUpsWhoMachesDriverTruckTrailer(driver, truck, trailer).forEach(
+                lu -> System.out.println(lu.getId() + "," + lu.getOrderId() + "," + lu.getOrderProduct() + "," +
+                        lu.getOrderUnits() + "," + lu.getOrderQuantity() + "," + lu.getOrderContact() + "," +
+                        lu.getOrderPhone() + "," + lu.getOrderDelAddress() + "," + lu.getOrderCity() + "," +
+                        lu.getOrderCountry()));
+
+        colId.setCellValueFactory(new PropertyValueFactory<Generator, String>("id"));
+        colOrderId.setCellValueFactory(new PropertyValueFactory<Generator, String>("orderId"));
+        colProduct.setCellValueFactory(new PropertyValueFactory<Generator, String>("orderProduct"));
+        colUnits.setCellValueFactory(new PropertyValueFactory<Generator, String>("orderUnits"));
+        colQuantity.setCellValueFactory(new PropertyValueFactory<Generator, String>("orderQuantity"));
+        colContact.setCellValueFactory(new PropertyValueFactory<Generator, String>("orderContact"));
+        colPhone.setCellValueFactory(new PropertyValueFactory<Generator, String>("orderPhone"));
+        colDelAddress.setCellValueFactory(new PropertyValueFactory<Generator, String>("orderDelAddress"));
+        colCity.setCellValueFactory(new PropertyValueFactory<Generator, String>("orderCity"));
+        colCountry.setCellValueFactory(new PropertyValueFactory<Generator, String>("orderCountry"));
+
+        listOfLineUps = FXCollections.observableArrayList(lineUp.getListLineUpsWhoMachesDriverTruckTrailer(driver, truck, trailer));
+
+        tvLineUps.setItems(listOfLineUps);
+    }
+}

@@ -250,7 +250,7 @@ public class FinishedOrderList {
             String signedName = csvRecord.get(26);
             String signedPosition = csvRecord.get(27);
 //            Image signiture = Image.value;
-            String note = csvRecord.get(29);
+            String note = csvRecord.get(28);
 
 
             finishedOrders.add(new FinishedOrder(id, generatorId, orderId, orderProduct, orderUnits, orderQuantity,
