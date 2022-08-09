@@ -1,9 +1,5 @@
 package com.example.trucker;
 
-import javafx.scene.image.Image;
-
-import java.util.Objects;
-
 public class FinishedOrder implements Comparable<FinishedOrder>{
 
     private static int nextId = 1;
@@ -125,14 +121,6 @@ public class FinishedOrder implements Comparable<FinishedOrder>{
         this.signedPosition = signedPosition;
 //        this.signiture = null;
         this.note = note;
-    }
-
-    public static int getNextId() {
-        return nextId;
-    }
-
-    public static void setNextId(int nextId) {
-        FinishedOrder.nextId = nextId;
     }
 
     public int getId() {
@@ -409,19 +397,6 @@ public class FinishedOrder implements Comparable<FinishedOrder>{
 //                ", signiture=" + signiture +
                 ", note='" + note + '\'' +
                 '}';
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (!(o instanceof FinishedOrder)) return false;
-        FinishedOrder that = (FinishedOrder) o;
-        return getId() == that.getId() && Objects.equals(getGeneratorId(), that.getGeneratorId()) && Objects.equals(getOrderId(), that.getOrderId()) && Objects.equals(getProduct(), that.getProduct()) && Objects.equals(getUnits(), that.getUnits()) && Objects.equals(getQuantity(), that.getQuantity()) && Objects.equals(getCompany(), that.getCompany()) && Objects.equals(getCompanyId(), that.getCompanyId()) && Objects.equals(getEmail(), that.getEmail()) && Objects.equals(getContact(), that.getContact()) && Objects.equals(getPhone(), that.getPhone()) && Objects.equals(getDeliveryAddress(), that.getDeliveryAddress()) && Objects.equals(getCity(), that.getCity()) && Objects.equals(getState(), that.getState()) && Objects.equals(getCountry(), that.getCountry()) && Objects.equals(getGooglN(), that.getGooglN()) && Objects.equals(getGooglE(), that.getGooglE()) && Objects.equals(getDriver(), that.getDriver()) && Objects.equals(getTruck(), that.getTruck()) && Objects.equals(getTrailer(), that.getTrailer()) && Objects.equals(getGeneratedDate(), that.getGeneratedDate()) && Objects.equals(getStartedDeliveryDate(), that.getStartedDeliveryDate()) && Objects.equals(getDeliveredDate(), that.getDeliveredDate()) && Objects.equals(getAcceptedDate(), that.getAcceptedDate()) && Objects.equals(getFinishedDate(), that.getFinishedDate()) && Objects.equals(getStatus(), that.getStatus()) && Objects.equals(getSignedName(), that.getSignedName()) && Objects.equals(getSignedPosition(), that.getSignedPosition()) && Objects.equals(getNote(), that.getNote());//pries " && Objects.equals(getNote(), that.getNote());" turi buti ir "&& Objects.equals(getSigniture(), that.getSigniture()) "
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(getId(), getGeneratorId(), getOrderId(), getProduct(), getUnits(), getQuantity(), getCompany(), getCompanyId(), getEmail(), getContact(), getPhone(), getDeliveryAddress(), getCity(), getState(), getCountry(), getGooglN(), getGooglE(), getDriver(), getTruck(), getTrailer(), getGeneratedDate(), getStartedDeliveryDate(), getDeliveredDate(), getAcceptedDate(), getFinishedDate(), getStatus(), getSignedName(), getSignedPosition(), getNote()); // pries ", getNote());" turi buti ir ", getSigniture()"
     }
 
     @Override

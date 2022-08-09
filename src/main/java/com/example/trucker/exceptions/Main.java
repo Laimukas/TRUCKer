@@ -53,6 +53,10 @@ public class Main {
 
         FinishedOrderList list = new FinishedOrderList();
         list.printFinishedOrders();
+        System.out.println("---------------------");
+        System.out.println( "Order by Id 1 is:");
+        System.out.println(list.getFinishedOrderById(1));
+
 
     }
 }

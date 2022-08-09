@@ -13,10 +13,12 @@ import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.image.Image;
+import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.net.URL;
+import java.util.ArrayList;
 import java.util.ResourceBundle;
 
 // ** tvOrders reik sutvarkyti,reik kad ismestu jau ivykdytus vairuotojo pristatymus,nepriklausomai pagal pasirinkta technika
@@ -32,6 +34,8 @@ public class DriversPage implements Initializable {
 
     @FXML
     private Label lblName;
+    @FXML
+    private Label lblFinOrId;
     @FXML
     private Label lblError;
     @FXML
@@ -99,7 +103,7 @@ public class DriversPage implements Initializable {
         insertFinishedOrdersToTable(selectedDriver.getName());
     }
 
-
+    // LetsBegin button action
 
     public void letsBegin(ActionEvent event) throws TRUCKerListError, IOException {
 
@@ -134,10 +138,43 @@ public class DriversPage implements Initializable {
         }
     }
 
+    @FXML
+    private void handleMouseAction(MouseEvent event) {
+        FinishedOrder mouseGenerator = tvMadeOrders.getSelectionModel().getSelectedItem();
+        lblFinOrId.setText(String.valueOf(mouseGenerator.getId()));
+
+    }
+
+    // Delete Button action
+
+    public void deleteFinishedOrder(ActionEvent event) throws TRUCKerListError {
+        removeLineUp();
+    }
+
+    private void removeLineUp() throws TRUCKerListError {
+        finishedOrderList.getFinishedOrders();
+        FinishedOrder lineUp = finishedOrderList.getFinishedOrderById(Integer.valueOf(lblFinOrId.getText())) ;
+        if (lineUp == null) {
+            throw new TRUCKerListError("You need to show egsisting Line-Up to remove it!");
+        }
+        System.out.println("-----------------------");
+        System.out.println("Finished Order we found:" +lineUp);
+        System.out.println("making changes");
+        lblError.setText("Removing Finished Order. Reloading file!");
+        finishedOrderList.removeFromList(lineUp);
+        finishedOrderList.reloadFile();
+        finishedOrderList.getFinishedOrders();
+        insertFinishedOrdersToTable(lblName.getText());
+    }
+
+    // LogOut button action
+
     public void driverLogOut(ActionEvent event) throws IOException {
         HelloApplication m = new HelloApplication();
         m.changeScene("hello-view.fxml",600,300);
     }
+
+
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
@@ -167,8 +204,12 @@ public class DriversPage implements Initializable {
         String myTrailer = cbTrailers.getValue();
         tfTrailer.setText(myTrailer);
     }
+
+    // Inserting Finished Orders who matches driver to Table
+
     public void insertFinishedOrdersToTable(String driver) throws TRUCKerListError {
         finishedOrderList = new FinishedOrderList();
+        finishedOrderList.getFinishedOrders();
         try {
             finishedOrderList.getListFinishedOrdersWhoMachesDriver(driver);
         } catch (TRUCKerListError e) {

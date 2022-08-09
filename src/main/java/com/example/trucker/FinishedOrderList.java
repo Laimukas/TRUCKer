@@ -45,7 +45,24 @@ public class FinishedOrderList {
         return ordersWeNeed;
     }
 
-    public void setFinishedOrderByData(int newId, String newGeneratorId, String newOrderId, String newOrderProduct, String newOrderUnits,
+    public FinishedOrder getFinishedOrderById(Integer id) throws TRUCKerListError {
+        FinishedOrder orderWeNeed = new FinishedOrder();
+        printFinishedOrders();
+        for (FinishedOrder lineUp : finishedOrders) {
+            //
+            if (lineUp.getId()==id) {
+                orderWeNeed=new FinishedOrder(lineUp.getId(), lineUp.getGeneratorId(), lineUp.getOrderId(), lineUp.getProduct(), lineUp.getUnits(),
+                        lineUp.getQuantity(), lineUp.getCompany(), lineUp.getCompanyId(), lineUp.getEmail(), lineUp.getContact(), lineUp.getPhone(),
+                        lineUp.getDeliveryAddress(), lineUp.getCity(), lineUp.getState(), lineUp.getCountry(), lineUp.getGooglN(), lineUp.getGooglE(),
+                        lineUp.getDriver(), lineUp.getTruck(), lineUp.getTrailer(), lineUp.getGeneratedDate(), lineUp.getStartedDeliveryDate(), lineUp.getDeliveredDate(),
+                        lineUp.getAcceptedDate(), lineUp.getFinishedDate(), lineUp.getStatus(), lineUp.getSignedName(), lineUp.getSignedPosition(), lineUp.getNote());
+                System.out.println(orderWeNeed);
+            }
+        }
+        return orderWeNeed;
+    }
+
+    public void setFinishedOrderWithId(int newId, String newGeneratorId, String newOrderId, String newOrderProduct, String newOrderUnits,
                                  String newOrderQuantity, String newCompany, String newCompanyId, String newEmail,
                                  String newOrderContact, String newOrderPhone, String newOrderDelAddress, String newOrderCity,
                                  String newState, String newOrderCountry, String newOrderGoogleN, String newOrderGoogleE,

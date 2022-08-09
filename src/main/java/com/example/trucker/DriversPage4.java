@@ -100,7 +100,7 @@ public class DriversPage4 implements Initializable {
 
     public void signTheOrder(ActionEvent event) throws TRUCKerListError, IOException {
 
-        FinishedOrder newFinishedOrder= new FinishedOrder();
+
         String orderId = lblOrderId.getText();
         String driver = lblDriver.getText();
         String truck = lblTruck.getText();
@@ -112,41 +112,28 @@ public class DriversPage4 implements Initializable {
 
         //Kuriam nauja Finished Order irasa
         finishedOrders.getFinishedOrders();
-        newFinishedOrder.setGeneratorId(String.valueOf(lineUpWeGet.getId()));
-        newFinishedOrder.setOrderId(String.valueOf(orderWeGet.getId()));
-        newFinishedOrder.setProduct(lineUpWeGet.getOrderProduct());
-        newFinishedOrder.setUnits(lineUpWeGet.getOrderUnits());
-        newFinishedOrder.setQuantity(lineUpWeGet.getOrderQuantity());
-        newFinishedOrder.setCompany(orderWeGet.getCompany());
-        newFinishedOrder.setCompanyId(orderWeGet.getCompanyId());
-        newFinishedOrder.setEmail(orderWeGet.getEmail());
-        newFinishedOrder.setContact(orderWeGet.getContact());
-        newFinishedOrder.setPhone(orderWeGet.getPhone());
-        newFinishedOrder.setDeliveryAddress(lineUpWeGet.getOrderDelAddress());
-        newFinishedOrder.setCity(lineUpWeGet.getOrderCity());
-        newFinishedOrder.setState(orderWeGet.getState());
-        newFinishedOrder.setCountry(lineUpWeGet.getOrderCountry());
-        newFinishedOrder.setGooglN(lineUpWeGet.getOrderGoogleN());
-        newFinishedOrder.setGooglE(lineUpWeGet.getOrderGoogleE());
-        newFinishedOrder.setDriver(lineUpWeGet.getDriver());
-        newFinishedOrder.setTruck(lineUpWeGet.getTruck());
-        newFinishedOrder.setTrailer(lineUpWeGet.getTrailer());
-        newFinishedOrder.setGeneratedDate(lineUpWeGet.getGeneratedDate());
-        newFinishedOrder.setStartedDeliveryDate(lineUpWeGet.getStartedDeliveryDate());
-        newFinishedOrder.setDeliveredDate(lineUpWeGet.getDeliveredDate());
-        newFinishedOrder.setAcceptedDate(laikas);
-        newFinishedOrder.setFinishedDate(laikas);
-        newFinishedOrder.setStatus("finished");
-        newFinishedOrder.setSignedName(tfName.getText());
-        newFinishedOrder.setSignedPosition(tfPosition.getText());
-        newFinishedOrder.setNote(taNote.getText());
+
+        FinishedOrder newFinishedOrder= new FinishedOrder(String.valueOf(lineUpWeGet.getId()),String.valueOf(orderWeGet.getId()),
+                lineUpWeGet.getOrderProduct(),lineUpWeGet.getOrderUnits(),lineUpWeGet.getOrderQuantity(),orderWeGet.getCompany(),
+                orderWeGet.getCompanyId(),orderWeGet.getEmail(),orderWeGet.getContact(),orderWeGet.getPhone(),lineUpWeGet.getOrderDelAddress(),
+                lineUpWeGet.getOrderCity(),orderWeGet.getState(),lineUpWeGet.getOrderCountry(),lineUpWeGet.getOrderGoogleN(),
+                lineUpWeGet.getOrderGoogleE(),lineUpWeGet.getDriver(),lineUpWeGet.getTruck(),lineUpWeGet.getTrailer(),lineUpWeGet.getGeneratedDate(),
+                lineUpWeGet.getStartedDeliveryDate(),lineUpWeGet.getDeliveredDate(),laikas,laikas,"finished",
+                tfName.getText(),tfPosition.getText(),taNote.getText());
 
         finishedOrders.addFinishedOrderToList(newFinishedOrder);
+        finishedOrders.reloadFile();
+        finishedOrders.getFinishedOrders();
+        lblError.setText("Finished Order was Added! Reloading file!");
 
-//        lineUps.getLineUps();
-//        lineUps.removeFromList(lineUpWeGet);  //pirmiau susikursim finished order ir tada patikrinus sita atidarysim
-//        orders.getOrders();
-//        orders.removeFromList(orderWeGet);  //pirmiau susikursim finished order ir tada patikrinus sita atidarysim
+        lineUps.getLineUps();
+        lineUps.removeFromList(lineUpWeGet);  //pirmiau susikursim finished order ir tada patikrinus sita atidarysim
+        lineUps.reloadFile();
+        lineUps.getLineUps();
+        orders.getOrders();
+        orders.removeFromList(orderWeGet);  //pirmiau susikursim finished order ir tada patikrinus sita atidarysim
+        orders.reloadFile();
+        orders.getOrders();
 
 
         if (orderId.isEmpty() || driver.isEmpty() || truck.isEmpty() || trailer.isEmpty()) {
