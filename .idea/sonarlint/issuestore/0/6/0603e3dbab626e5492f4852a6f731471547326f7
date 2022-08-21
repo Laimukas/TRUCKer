@@ -1,0 +1,45 @@
+
+J
+java:S3740E"/Provide the parametrized type for this generic.(ºšãÿıÿÿÿÿ
+E
+java:S3740G"/Provide the parametrized type for this generic.(àû¬Ş
+J
+java:S3740I"/Provide the parametrized type for this generic.(˜ÕÑúÿÿÿÿ
+J
+java:S3740K"/Provide the parametrized type for this generic.(¯×¸ıÿÿÿÿ
+E
+java:S3740M"/Provide the parametrized type for this generic.(ÙŠşÈ
+J
+java:S3740O"/Provide the parametrized type for this generic.(á¹ŸŒÿÿÿÿÿ
+J
+java:S3740Q"/Provide the parametrized type for this generic.(æÔÜ¼ûÿÿÿÿ
+E
+java:S3740S"/Provide the parametrized type for this generic.(¼í¢
+J
+java:S3740U"/Provide the parametrized type for this generic.(¾±ƒ‡úÿÿÿÿ
+E
+java:S3740W"/Provide the parametrized type for this generic.(öğÏ
+t
+java:S1104["YMake listOfLineUps a static final constant or non-public and provide accessors if needed.(¢‘ºÄûÿÿÿÿ
+N
+java:S1444["3Make this "public static listOfLineUps" field final(¢‘ºÄûÿÿÿÿ
+
+java:S1186£"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(òä°£ûÿÿÿÿ
+—
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(‘³¢¥
+s
+java:S1450"]Remove the "selectedDriver" field and declare it as a local variable in the relevant methods.(ÄÎ¾Ô
+y
+java:S1450!"^Remove the "selectedTrailer" field and declare it as a local variable in the relevant methods.(‹ê‘‘úÿÿÿÿ
+r
+java:S1450 "\Remove the "selectedTruck" field and declare it as a local variable in the relevant methods.(³ğúã
+ 
+java:S1130”"ˆRemove the declaration of thrown exception 'com.example.trucker.exceptions.TRUCKerListError', as it cannot be thrown from method's body.(êÍã†
+N	java:S106©"9Replace this use of System.out or System.err by a logger.(¬‡Ä{
+O	java:S106¬"9Replace this use of System.out or System.err by a logger.(Òú¨»
+D
+java:S2386¼"(Make member "listOfLineUps" "protected".(­èÙ²øÿÿÿÿ
+R
+java:S2696¼"6Make the enclosing method "static" or remove this set.(­èÙ²øÿÿÿÿ
+A
+java:S1068#"+Remove this unused "lineUps" private field.(şêü¯

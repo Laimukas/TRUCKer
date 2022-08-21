@@ -1,0 +1,11 @@
+
+\	java:S107."BConstructor has 29 parameters, which is greater than 7 authorized.(äÃÊ½øÿÿÿÿ
+\	java:S107W"BConstructor has 28 parameters, which is greater than 7 authorized.(‘âßýøÿÿÿÿ
+p
+java:S1210“"YOverride "equals(Object obj)" to comply with the contract of the "compareTo(T o)" method.(ìŽ¿õ
+V	java:S125'"<This block of commented-out lines of code should be removed.(ªƒ¦Ãüÿÿÿÿ
+>
+java:S30107"#Remove this assignment of "nextId".(´¦¯Ðüÿÿÿÿ
+V	java:S125T"<This block of commented-out lines of code should be removed.( ½‘²þÿÿÿÿ
+V	java:S125z"<This block of commented-out lines of code should be removed.( ½‘²þÿÿÿÿ
+R	java:S125Þ"<This block of commented-out lines of code should be removed.(³ÕÃè

@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.canvas.Canvas?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.Separator?>
@@ -11,6 +13,7 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
@@ -400,7 +403,23 @@
                         </HBox>
                      </children>
                   </AnchorPane>
-                  <AnchorPane prefHeight="335.0" prefWidth="556.0" />
+                  <AnchorPane prefHeight="335.0" prefWidth="556.0">
+                     <children>
+                        <StackPane layoutX="5.0" layoutY="26.0" prefHeight="213.0" prefWidth="547.0">
+                           <children>
+                              <Canvas fx:id="canvasParasas" height="208.0" onMouseDragged="#canvasParasasMouseDragged" onMousePressed="#canvasParasasMousePressed" onMouseReleased="#canvasParasasMouseReleased" styleClass="drowarea" width="546.0">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Canvas>
+                           </children>
+                        </StackPane>
+                        <Label layoutX="5.0" layoutY="6.0" text="Signature">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                     </children></AnchorPane>
                   <AnchorPane prefHeight="155.0" prefWidth="556.0">
                      <children>
                         <Label layoutX="3.0" layoutY="14.0" text="NOTE">
